@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine Surprise 💖</title>
+    <link rel="stylesheet" href="krr.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>💖 Hey My kuchu puchu🎀🐈 💖</h1>
+        <p class="text">I have a small surprise for you... 💌</p>
+
+        <button onclick="openSurprise()">🎁 Open Surprise</button>
+        <button onclick="playMusic()">🎶 Play Romantic Music</button>
+
+        <div id="surpriseBox" class="hidden">
+            <h2>💖 Will You Be My Valentine? 💖</h2>
+
+            <button class="yesbtn" onclick="yesAnswer()">Yes 😍</button>
+            <button class="nobtn" onclick="noAnswer()">No 😢</button>
+
+            <p id="result"></p>
+        </div>
+
+        <div class="musicbox">
+            <h3>🎶 Tum Meri Bahon Mein Duniya Bhula De</h3>
+
+            <audio id="bgMusic" controls>
+                <source src="audio/tummeri.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
+    <script src="krr.js"></script>
+</body>
+</html>
